@@ -1,0 +1,737 @@
+cat > /home/claude/ankurai_landing.html << 'HTMLEOF'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AnkurAI — Custom AI for Immigration Law Firms</title>
+<meta name="description" content="Custom AI document intelligence for US immigration attorneys. I-485, RFE, I-130, I-140 and more — automated extraction, Part 9 analysis, case summaries.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ── Reset ─────────────────────────────────────────────────────────────── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+
+/* ── Tokens ────────────────────────────────────────────────────────────── */
+:root{
+  --navy:    #0C1A2E;
+  --navy2:   #122240;
+  --navy3:   #1A3157;
+  --gold:    #C9A84C;
+  --gold2:   #E8C96A;
+  --cream:   #F6F2EA;
+  --cream2:  #EDE7D8;
+  --white:   #FFFFFF;
+  --gray:    #6B7A94;
+  --lgray:   #D4CEBC;
+  --red:     #C0392B;
+  --amber:   #E67E22;
+  --green:   #16A363;
+  --serif:   'Instrument Serif', Georgia, serif;
+  --sans:    'DM Sans', system-ui, sans-serif;
+  --mono:    'DM Mono', 'Courier New', monospace;
+  --r:       8px;
+  --rmd:     12px;
+  --rlg:     16px;
+}
+
+body{
+  font-family: var(--sans);
+  background: var(--cream);
+  color: var(--navy);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ── Nav ───────────────────────────────────────────────────────────────── */
+nav{
+  position: fixed; top:0; left:0; right:0; z-index:100;
+  display: flex; align-items:center; justify-content:space-between;
+  padding: 18px 48px;
+  background: rgba(12,26,46,0.96);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(201,168,76,0.15);
+}
+.nav-logo{
+  font-family: var(--serif); font-size:20px; color:var(--cream);
+  letter-spacing:-0.3px;
+}
+.nav-logo span{ color:var(--gold); }
+.nav-contact{
+  font-size:13px; color:var(--gold); font-weight:500;
+  text-decoration:none; letter-spacing:0.3px;
+  border:1px solid rgba(201,168,76,0.4); padding:7px 18px; border-radius:6px;
+  transition: all 0.2s;
+}
+.nav-contact:hover{ background:var(--gold); color:var(--navy); }
+
+/* ── Hero ──────────────────────────────────────────────────────────────── */
+.hero{
+  min-height: 100vh;
+  background: var(--navy);
+  display: grid; grid-template-columns:1fr 1fr;
+  align-items: center; gap:64px;
+  padding: 120px 72px 80px;
+  position: relative; overflow:hidden;
+}
+.hero::before{
+  content:'';
+  position:absolute; inset:0;
+  background: radial-gradient(ellipse 60% 80% at 70% 50%, rgba(201,168,76,0.06) 0%, transparent 70%);
+  pointer-events:none;
+}
+.hero-eyebrow{
+  font-size:11px; font-weight:600; letter-spacing:1.5px;
+  color:var(--gold); text-transform:uppercase; margin-bottom:20px;
+}
+.hero-h1{
+  font-family: var(--serif); font-size:clamp(38px,4.5vw,60px);
+  color:var(--cream); line-height:1.12; letter-spacing:-1px;
+  margin-bottom:24px;
+}
+.hero-h1 em{ font-style:italic; color:var(--gold); }
+.hero-sub{
+  font-size:17px; color: rgba(246,242,234,0.65); line-height:1.7;
+  max-width:460px; margin-bottom:36px;
+}
+.hero-ctas{ display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
+.btn-primary{
+  background:var(--gold); color:var(--navy); font-weight:700;
+  font-size:14px; padding:13px 28px; border-radius:var(--r);
+  text-decoration:none; transition:all 0.2s; border:none; cursor:pointer;
+}
+.btn-primary:hover{ background:var(--gold2); transform:translateY(-1px); }
+.btn-ghost{
+  color:var(--cream); font-size:14px; text-decoration:none;
+  opacity:0.65; display:flex; align-items:center; gap:6px;
+  transition: opacity 0.2s;
+}
+.btn-ghost:hover{ opacity:1; }
+.hero-trust{
+  margin-top:40px; display:flex; gap:32px; align-items:center;
+  padding-top:28px; border-top:1px solid rgba(255,255,255,0.08);
+}
+.trust-item{ font-size:12px; color:rgba(246,242,234,0.45); }
+.trust-item strong{ display:block; font-size:22px; color:var(--gold); font-family:var(--serif); }
+
+/* ── Document Extraction Demo (hero right) ─────────────────────────────── */
+.hero-demo{
+  background: rgba(255,255,255,0.04);
+  border:1px solid rgba(201,168,76,0.18);
+  border-radius:var(--rlg);
+  overflow:hidden;
+  position:relative;
+}
+.demo-chrome{
+  background:#0A1628; padding:10px 16px;
+  display:flex; align-items:center; gap:8px;
+}
+.demo-dot{ width:10px; height:10px; border-radius:50%; }
+.demo-title{
+  flex:1; text-align:center; font-size:11px; color:rgba(255,255,255,0.3);
+  font-family:var(--mono);
+}
+.demo-body{ padding:24px; }
+.demo-doc-header{
+  text-align:center; padding:12px; background:rgba(255,255,255,0.03);
+  border-radius:var(--r); border:1px solid rgba(255,255,255,0.06);
+  margin-bottom:16px;
+}
+.demo-doc-header .doc-type{
+  font-size:11px; letter-spacing:1px; text-transform:uppercase;
+  color:var(--gold); font-weight:600; margin-bottom:4px;
+}
+.demo-doc-header .doc-name{
+  font-size:13px; color:var(--cream); font-weight:500;
+}
+.demo-fields{ display:flex; flex-direction:column; gap:8px; margin-bottom:16px; }
+.demo-field{
+  display:flex; justify-content:space-between; align-items:center;
+  padding:8px 12px; background:rgba(255,255,255,0.04); border-radius:6px;
+  border:1px solid rgba(255,255,255,0.05);
+}
+.field-label{ font-size:11px; color:rgba(255,255,255,0.4); text-transform:uppercase; letter-spacing:0.4px; }
+.field-val{ font-size:12px; color:var(--cream); font-family:var(--mono); font-weight:500; }
+.field-val.ok::before{ content:'✓ '; color:var(--green); }
+.demo-flags{ display:flex; flex-direction:column; gap:6px; }
+.demo-flag{
+  padding:8px 12px; border-radius:6px;
+  font-size:11px; font-weight:600;
+  display:flex; align-items:flex-start; gap:8px;
+}
+.flag-critical{ background:rgba(192,57,43,0.15); border-left:3px solid var(--red); color:#F5A49A; }
+.flag-high    { background:rgba(230,126,34,0.15); border-left:3px solid var(--amber); color:#F5C89A; }
+.flag-medium  { background:rgba(241,196,15,0.1);  border-left:3px solid #F1C40F; color:#F5E49A; }
+.demo-badge{
+  margin-top:14px; display:inline-flex; align-items:center; gap:6px;
+  padding:6px 12px; border-radius:20px;
+  font-size:11px; font-weight:700; letter-spacing:0.3px;
+  background:rgba(192,57,43,0.2); color:#F5A49A; border:1px solid rgba(192,57,43,0.3);
+}
+.demo-scan-line{
+  position:absolute; left:0; right:0; height:2px;
+  background:linear-gradient(90deg,transparent,rgba(201,168,76,0.6),transparent);
+  animation: scan 3s ease-in-out infinite;
+  pointer-events:none;
+}
+@keyframes scan{
+  0%  { top:60px; opacity:0; }
+  10% { opacity:1; }
+  90% { opacity:1; }
+  100%{ top:95%; opacity:0; }
+}
+
+/* ── Forms Grid ────────────────────────────────────────────────────────── */
+.section{ padding:80px 72px; }
+.section-eyebrow{
+  font-size:11px; font-weight:600; letter-spacing:1.5px;
+  color:var(--gold); text-transform:uppercase; margin-bottom:12px;
+}
+.section-h2{
+  font-family:var(--serif); font-size:clamp(28px,3vw,42px);
+  color:var(--navy); line-height:1.15; letter-spacing:-0.5px;
+  margin-bottom:16px; max-width:560px;
+}
+.section-h2 em{ font-style:italic; color:var(--gold); }
+.section-sub{ font-size:15px; color:var(--gray); max-width:520px; margin-bottom:48px; line-height:1.7; }
+
+.forms-grid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:12px;
+}
+.form-card{
+  background:var(--white); border:1px solid var(--lgray);
+  border-radius:var(--rmd); padding:20px 18px;
+  transition: all 0.2s; cursor:default;
+  position:relative; overflow:hidden;
+}
+.form-card:hover{
+  border-color:var(--gold); transform:translateY(-2px);
+  box-shadow:0 8px 24px rgba(201,168,76,0.12);
+}
+.form-card::before{
+  content:''; position:absolute; left:0; top:0; bottom:0;
+  width:3px; background:var(--gold); opacity:0;
+  transition: opacity 0.2s;
+}
+.form-card:hover::before{ opacity:1; }
+.form-tag{ font-family:var(--mono); font-size:15px; font-weight:500; color:var(--navy); margin-bottom:6px; }
+.form-name{ font-size:12px; color:var(--gray); line-height:1.4; }
+.form-badge{
+  position:absolute; top:12px; right:12px;
+  font-size:9px; font-weight:700; letter-spacing:0.5px;
+  padding:3px 7px; border-radius:10px; text-transform:uppercase;
+}
+.badge-ai{ background:#EEF2FF; color:#3730A3; }
+.badge-direct{ background:#ECFDF5; color:#065F46; }
+
+/* ── How it works ──────────────────────────────────────────────────────── */
+.section-dark{
+  background:var(--navy); padding:80px 72px;
+}
+.section-dark .section-h2{ color:var(--cream); }
+.section-dark .section-sub{ color:rgba(246,242,234,0.55); }
+.section-dark .section-eyebrow{ color:var(--gold); }
+
+.steps{ display:grid; grid-template-columns:repeat(4,1fr); gap:24px; margin-top:48px; }
+.step{
+  background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.06);
+  border-radius:var(--rlg); padding:28px 24px;
+  position:relative;
+}
+.step::after{
+  content:'→';
+  position:absolute; right:-14px; top:50%;
+  transform:translateY(-50%);
+  color:rgba(201,168,76,0.3); font-size:18px;
+  display:block;
+}
+.step:last-child::after{ display:none; }
+.step-num{
+  font-family:var(--serif); font-size:40px; color:rgba(201,168,76,0.2);
+  line-height:1; margin-bottom:12px;
+}
+.step-title{ font-size:15px; font-weight:600; color:var(--cream); margin-bottom:8px; }
+.step-desc{ font-size:13px; color:rgba(246,242,234,0.5); line-height:1.6; }
+
+/* ── What you get ──────────────────────────────────────────────────────── */
+.deliverables{ display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:40px; }
+.del-card{
+  background:var(--white); border:1px solid var(--lgray);
+  border-radius:var(--rlg); padding:28px 24px;
+}
+.del-icon{ font-size:28px; margin-bottom:14px; }
+.del-title{ font-size:16px; font-weight:600; color:var(--navy); margin-bottom:8px; }
+.del-desc{ font-size:13px; color:var(--gray); line-height:1.6; margin-bottom:16px; }
+.del-items{ list-style:none; }
+.del-items li{
+  font-size:12px; color:var(--gray); padding:5px 0;
+  border-bottom:1px solid var(--cream2);
+  display:flex; gap:8px; align-items:flex-start;
+}
+.del-items li::before{ content:'✓'; color:var(--green); font-weight:700; flex-shrink:0; margin-top:1px; }
+
+/* ── Why custom ────────────────────────────────────────────────────────── */
+.vs-grid{ display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:40px; }
+.vs-card{
+  border-radius:var(--rlg); padding:28px 24px;
+}
+.vs-saas{ background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); }
+.vs-custom{ background:rgba(201,168,76,0.08); border:1px solid rgba(201,168,76,0.25); }
+.vs-label{
+  font-size:11px; font-weight:700; letter-spacing:1px; text-transform:uppercase;
+  margin-bottom:16px; display:inline-block; padding:4px 10px; border-radius:4px;
+}
+.vs-label.saas{ background:rgba(255,255,255,0.06); color:rgba(246,242,234,0.4); }
+.vs-label.custom{ background:rgba(201,168,76,0.2); color:var(--gold); }
+.vs-title{ font-family:var(--serif); font-size:20px; margin-bottom:16px; }
+.vs-saas .vs-title{ color:rgba(246,242,234,0.5); }
+.vs-custom .vs-title{ color:var(--cream); }
+.vs-items{ list-style:none; display:flex; flex-direction:column; gap:10px; }
+.vs-items li{ font-size:13px; line-height:1.5; display:flex; gap:10px; }
+.vs-saas .vs-items li{ color:rgba(246,242,234,0.4); }
+.vs-custom .vs-items li{ color:rgba(246,242,234,0.8); }
+.vs-items li span{ flex-shrink:0; font-size:14px; }
+
+/* ── Contact ───────────────────────────────────────────────────────────── */
+.contact-section{
+  background:var(--navy2); padding:80px 72px;
+  display:grid; grid-template-columns:1fr 1fr; gap:72px; align-items:center;
+}
+.contact-h2{
+  font-family:var(--serif); font-size:clamp(32px,3.5vw,48px);
+  color:var(--cream); line-height:1.1; letter-spacing:-0.5px; margin-bottom:20px;
+}
+.contact-h2 em{ color:var(--gold); font-style:italic; }
+.contact-sub{ font-size:15px; color:rgba(246,242,234,0.55); line-height:1.7; margin-bottom:32px; }
+.contact-steps{ list-style:none; display:flex; flex-direction:column; gap:16px; }
+.contact-steps li{
+  display:flex; gap:14px; align-items:flex-start;
+  font-size:14px; color:rgba(246,242,234,0.7); line-height:1.5;
+}
+.step-circle{
+  width:26px; height:26px; border-radius:50%;
+  background:rgba(201,168,76,0.15); border:1px solid rgba(201,168,76,0.3);
+  color:var(--gold); font-size:12px; font-weight:700;
+  display:flex; align-items:center; justify-content:center;
+  flex-shrink:0; margin-top:1px;
+}
+
+.contact-card{
+  background:rgba(255,255,255,0.04); border:1px solid rgba(201,168,76,0.2);
+  border-radius:var(--rlg); padding:36px;
+}
+.contact-label{
+  font-size:11px; font-weight:600; letter-spacing:1.2px;
+  color:var(--gold); text-transform:uppercase; margin-bottom:24px;
+}
+.email-display{
+  font-family:var(--serif); font-size:clamp(18px,2.5vw,26px);
+  color:var(--cream); margin-bottom:8px;
+  word-break:break-all;
+}
+.email-sub{ font-size:13px; color:rgba(246,242,234,0.4); margin-bottom:28px; }
+.contact-cta{
+  display:block; background:var(--gold); color:var(--navy); font-weight:700;
+  font-size:14px; padding:14px 28px; border-radius:var(--r);
+  text-decoration:none; text-align:center; transition:all 0.2s;
+}
+.contact-cta:hover{ background:var(--gold2); transform:translateY(-1px); }
+.contact-also{
+  margin-top:16px; font-size:12px; color:rgba(246,242,234,0.3);
+  text-align:center;
+}
+.contact-pricing{
+  margin-top:24px; padding-top:24px;
+  border-top:1px solid rgba(255,255,255,0.06);
+}
+.pricing-row{
+  display:flex; justify-content:space-between; align-items:center;
+  padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.04);
+  font-size:13px;
+}
+.pricing-row .label{ color:rgba(246,242,234,0.5); }
+.pricing-row .price{ color:var(--cream); font-weight:600; font-family:var(--mono); }
+.pricing-row .price.gold{ color:var(--gold); }
+
+/* ── Footer ────────────────────────────────────────────────────────────── */
+footer{
+  background:var(--navy); padding:28px 72px;
+  display:flex; justify-content:space-between; align-items:center;
+  border-top:1px solid rgba(255,255,255,0.05);
+  font-size:12px; color:rgba(246,242,234,0.3);
+}
+footer a{ color:var(--gold); text-decoration:none; }
+
+/* ── Animations ────────────────────────────────────────────────────────── */
+.fade-up{
+  opacity:0; transform:translateY(24px);
+  transition:opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-up.visible{ opacity:1; transform:translateY(0); }
+
+/* ── Responsive ────────────────────────────────────────────────────────── */
+@media(max-width:900px){
+  nav{ padding:16px 24px; }
+  .hero{ grid-template-columns:1fr; padding:100px 24px 60px; gap:40px; }
+  .hero-demo{ display:none; }
+  .section,.section-dark{ padding:60px 24px; }
+  .steps{ grid-template-columns:1fr 1fr; }
+  .step::after{ display:none; }
+  .deliverables,.vs-grid{ grid-template-columns:1fr; }
+  .contact-section{ grid-template-columns:1fr; padding:60px 24px; gap:40px; }
+  .forms-grid{ grid-template-columns:repeat(2,1fr); }
+  footer{ flex-direction:column; gap:12px; padding:24px; text-align:center; }
+}
+@media(max-width:500px){
+  .forms-grid{ grid-template-columns:1fr; }
+  .steps{ grid-template-columns:1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- ── Nav ──────────────────────────────────────────────────────────────── -->
+<nav>
+  <div class="nav-logo">Ankur<span>AI</span>.tech</div>
+  <a href="mailto:ankur@ankurai.tech" class="nav-contact">ankur@ankurai.tech</a>
+</nav>
+
+<!-- ── Hero ─────────────────────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-content">
+    <p class="hero-eyebrow">Custom AI for Immigration Law Firms</p>
+    <h1 class="hero-h1">Your immigration documents, <em>read and analyzed</em> by AI.</h1>
+    <p class="hero-sub">I build custom AI document intelligence solutions for US immigration attorneys — extracting structured data from I-485s, flagging Part 9 risks, generating case summaries and support letters. No generic SaaS. Built specifically for your firm's workflow.</p>
+    <div class="hero-ctas">
+      <a href="mailto:ankur@ankurai.tech?subject=Free Case Review Request" class="btn-primary">Request a Free Case Review</a>
+      <a href="#how-it-works" class="btn-ghost">See how it works →</a>
+    </div>
+    <div class="hero-trust">
+      <div class="trust-item"><strong>12</strong>Document types</div>
+      <div class="trust-item"><strong>86/86</strong>Part 9 questions</div>
+      <div class="trust-item"><strong>2 hrs</strong>Turnaround</div>
+      <div class="trust-item"><strong>Free</strong>First case</div>
+    </div>
+  </div>
+
+  <!-- Live extraction demo mockup -->
+  <div class="hero-demo">
+    <div class="demo-scan-line"></div>
+    <div class="demo-chrome">
+      <div class="demo-dot" style="background:#FF5F57"></div>
+      <div class="demo-dot" style="background:#FFBD2E"></div>
+      <div class="demo-dot" style="background:#28C840"></div>
+      <div class="demo-title">ImmigrationIQ — Extraction in progress</div>
+    </div>
+    <div class="demo-body">
+      <div class="demo-doc-header">
+        <div class="doc-type">Form I-485 · 24 pages</div>
+        <div class="doc-name">Application to Register Permanent Residence</div>
+      </div>
+      <div class="demo-fields">
+        <div class="demo-field">
+          <span class="field-label">Full Name</span>
+          <span class="field-val ok">Arjun S. Patel</span>
+        </div>
+        <div class="demo-field">
+          <span class="field-label">Country of Birth</span>
+          <span class="field-val ok">India</span>
+        </div>
+        <div class="demo-field">
+          <span class="field-label">Current Status</span>
+          <span class="field-val ok">H-1B · expires Oct 2025</span>
+        </div>
+        <div class="demo-field">
+          <span class="field-label">Priority Date</span>
+          <span class="field-val ok">June 15, 2019 · EB-2 NIW</span>
+        </div>
+        <div class="demo-field">
+          <span class="field-label">Part 9 Checked</span>
+          <span class="field-val" style="color:var(--green)">86 / 86 ✓</span>
+        </div>
+      </div>
+      <div class="demo-flags">
+        <div class="demo-flag flag-critical">
+          <span>🔴</span>
+          <span>CRITICAL · Q53a: Prior torture participation disclosed</span>
+        </div>
+        <div class="demo-flag flag-high">
+          <span>🟠</span>
+          <span>HIGH · Q24: Prior criminal conviction disclosed</span>
+        </div>
+        <div class="demo-flag flag-medium">
+          <span>🟡</span>
+          <span>MEDIUM · 7-month travel gap — verify Advance Parole</span>
+        </div>
+      </div>
+      <div class="demo-badge">🔴 Critical Risk · Attorney review required</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Forms Supported ───────────────────────────────────────────────────── -->
+<section class="section fade-up">
+  <p class="section-eyebrow">Document Coverage</p>
+  <h2 class="section-h2">Works on <em>any</em> immigration document your firm handles</h2>
+  <p class="section-sub">From green card applications to RFE responses — every major USCIS form type is supported. Real USCIS fillable PDFs are read directly from form fields, not OCR'd.</p>
+
+  <div class="forms-grid">
+    <div class="form-card">
+      <span class="form-badge badge-direct">Direct read</span>
+      <div class="form-tag">I-485</div>
+      <div class="form-name">Green Card Application · All 14 parts · 86 Part 9 questions</div>
+    </div>
+    <div class="form-card">
+      <span class="form-badge badge-ai">AI extract</span>
+      <div class="form-tag">I-130</div>
+      <div class="form-name">Petition for Alien Relative · Family-based cases</div>
+    </div>
+    <div class="form-card">
+      <span class="form-badge badge-ai">AI extract</span>
+      <div class="form-tag">I-140</div>
+      <div class="form-name">Immigrant Worker Petition · EB categories</div>
+    </div>
+    <div class="form-card">
+      <span class="form-badge badge-ai">AI extract</span>
+      <div class="form-tag">I-864</div>
+      <div class="form-name">Affidavit of Support · Income vs FPG analysis</div>
+    </div>
+    <div class="form-card">
+      <span class="form-badge badge-ai">AI extract</span>
+      <div class="form-tag">I-765</div>
+      <div class="form-name">Work Authorization · EAD renewal timing</div>
+    </div>
+    <div class="form-card">
+      <span class="form-badge badge-ai">AI extract</span>
+      <div class="form-tag">I-131</div>
+      <div class="form-name">Advance Parole · Travel risk analysis</div>
+    </div>
+    <div class="form-card">
+      <span class="form-badge badge-ai">AI extract</span>
+      <div class="form-tag">I-94</div>
+      <div class="form-name">Arrival Record · Status & overstay detection</div>
+    </div>
+    <div class="form-card">
+      <span class="form-badge badge-ai">AI extract</span>
+      <div class="form-tag">I-797</div>
+      <div class="form-name">Notice of Action · Deadlines & next steps</div>
+    </div>
+    <div class="form-card">
+      <span class="form-badge badge-ai">AI extract</span>
+      <div class="form-tag">RFE</div>
+      <div class="form-name">Request for Evidence · Grounds + deadline tracking</div>
+    </div>
+    <div class="form-card">
+      <span class="form-badge badge-ai">AI extract</span>
+      <div class="form-tag">Support Letter</div>
+      <div class="form-name">Employer letters · Key claims & risk flags</div>
+    </div>
+    <div class="form-card">
+      <span class="form-badge badge-ai">AI extract</span>
+      <div class="form-tag">Client Intake</div>
+      <div class="form-name">Intake forms · Triage summary & urgency flags</div>
+    </div>
+    <div class="form-card" style="background:var(--cream2); border-style:dashed;">
+      <div class="form-tag" style="color:var(--gray)">+ More</div>
+      <div class="form-name">Custom forms, EOIR documents, and firm-specific templates on request</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── How It Works ──────────────────────────────────────────────────────── -->
+<section class="section-dark fade-up" id="how-it-works">
+  <p class="section-eyebrow">The Process</p>
+  <h2 class="section-h2" style="color:var(--cream)">From document to <em>decision-ready summary</em> in 2 hours</h2>
+  <p class="section-sub">No software to install. No training required. You email me the documents — I return the analysis.</p>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-title">You send the documents</div>
+      <div class="step-desc">Email an old completed case with client data redacted. Any format — PDF, scanned, or digital fillable form.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-title">AI extracts every field</div>
+      <div class="step-desc">Real USCIS PDFs are read from form fields directly. All 14 parts of the I-485 — including all 86 Part 9 questions — extracted and structured.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-title">Risks are flagged automatically</div>
+      <div class="step-desc">Travel gaps, prior visa denials, Part 9 disclosures, income shortfalls, missing fields — all identified with severity ratings.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-title">Word docs returned to you</div>
+      <div class="step-desc">A structured Case Summary and Draft Support Letter — formatted in Word, ready for attorney review and client file. Within 2 hours.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Deliverables ──────────────────────────────────────────────────────── -->
+<section class="section fade-up">
+  <p class="section-eyebrow">What You Get</p>
+  <h2 class="section-h2">Two Word documents, <em>ready to use</em></h2>
+  <p class="section-sub">Everything formatted to drop directly into your client file. Attorney reviews, edits, and approves before anything is finalized.</p>
+
+  <div class="deliverables">
+    <div class="del-card">
+      <div class="del-icon">📋</div>
+      <div class="del-title">Case Summary Report</div>
+      <div class="del-desc">Every field extracted and organized by section. Risk flags with severity ratings. Part 9 fully analyzed. Attorney summary paragraph.</div>
+      <ul class="del-items">
+        <li>All 14 I-485 parts structured</li>
+        <li>Part 9 — all 86 questions checked</li>
+        <li>Risk flags: Critical / High / Medium / Low</li>
+        <li>Travel history with gap analysis</li>
+        <li>Missing field checklist</li>
+        <li>3-sentence attorney summary</li>
+        <li>Formatted in your firm's Word template</li>
+      </ul>
+    </div>
+    <div class="del-card">
+      <div class="del-icon">✉️</div>
+      <div class="del-title">Draft Support Letter</div>
+      <div class="del-desc">Professional employer support letter drafted from extracted case data — client name, role, employer, salary, key supporting arguments.</div>
+      <ul class="del-items">
+        <li>Populated with extracted case facts</li>
+        <li>Professional legal letter format</li>
+        <li>Employer & signatory block</li>
+        <li>DRAFT watermark until attorney approves</li>
+        <li>Ready for firm letterhead</li>
+        <li>Editable Word format</li>
+        <li>Cross-document consistency checked</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ── Why Custom ────────────────────────────────────────────────────────── -->
+<section class="section-dark fade-up">
+  <p class="section-eyebrow">Why Not SaaS</p>
+  <h2 class="section-h2" style="color:var(--cream)">Generic tools weren't <em>built for your cases</em></h2>
+  <p class="section-sub">ChatGPT is a chatbot. Off-the-shelf tools give inconsistent output. A custom solution built around your document types, your workflow, and your firm's specific needs is a different category entirely.</p>
+
+  <div class="vs-grid">
+    <div class="vs-card vs-saas">
+      <span class="vs-label saas">Generic AI / ChatGPT</span>
+      <div class="vs-title">What you get without customization</div>
+      <ul class="vs-items">
+        <li><span>✗</span>Different output format every time</li>
+        <li><span>✗</span>Doesn't know Part 9 has 86 questions</li>
+        <li><span>✗</span>Can't read USCIS AcroForm fields directly</li>
+        <li><span>✗</span>Client data pasted into public ChatGPT</li>
+        <li><span>✗</span>No attorney review workflow</li>
+        <li><span>✗</span>No case history or tracking</li>
+      </ul>
+    </div>
+    <div class="vs-card vs-custom">
+      <span class="vs-label custom">AnkurAI — Custom Solution</span>
+      <div class="vs-title">What you get with a purpose-built tool</div>
+      <ul class="vs-items">
+        <li><span>✓</span>Same structured Word output every case</li>
+        <li><span>✓</span>86/86 Part 9 questions checked automatically</li>
+        <li><span>✓</span>Real USCIS PDFs read from form fields directly</li>
+        <li><span>✓</span>Runs locally or on your server — data stays private</li>
+        <li><span>✓</span>Built-in attorney review and approval workflow</li>
+        <li><span>✓</span>Customized to your firm's forms and templates</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ── Contact ───────────────────────────────────────────────────────────── -->
+<section class="contact-section fade-up" id="contact">
+  <div>
+    <p class="section-eyebrow" style="color:var(--gold)">Get Started</p>
+    <h2 class="contact-h2">Send me one case. <em>Free.</em></h2>
+    <p class="contact-sub">No commitment. No pitch. You send an old completed case with client data redacted — I return the Word output within 2 hours. You decide if it's worth your time.</p>
+
+    <ul class="contact-steps">
+      <li>
+        <div class="step-circle">1</div>
+        <span>Email an old completed I-485 or case packet — redact the client's personal details first</span>
+      </li>
+      <li>
+        <div class="step-circle">2</div>
+        <span>I process it and return a Case Summary Word doc + Draft Support Letter within 2 hours</span>
+      </li>
+      <li>
+        <div class="step-circle">3</div>
+        <span>If it saves you time, we discuss an ongoing arrangement — per case or monthly</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="contact-card">
+    <div class="contact-label">Reach out directly</div>
+    <div class="email-display">ankur@ankurai.tech</div>
+    <div class="email-sub">Replies within a few hours · US time zones accommodated</div>
+
+    <a href="mailto:ankur@ankurai.tech?subject=Free Case Review — [Your Firm Name]&body=Hi Ankur,%0A%0AI'd like to try the free case review.%0A%0AFirm name:%0ACase type (I-485 / I-130 / other):%0A%0AI'll attach a redacted document.%0A%0AThanks" class="contact-cta">
+      Request Free Case Review →
+    </a>
+    <p class="contact-also">Or mention it in subject: "Free Case Review"</p>
+
+    <div class="contact-pricing">
+      <div class="pricing-row">
+        <span class="label">First case</span>
+        <span class="price gold">Free</span>
+      </div>
+      <div class="pricing-row">
+        <span class="label">Per case (ongoing)</span>
+        <span class="price">$150 / case</span>
+      </div>
+      <div class="pricing-row">
+        <span class="label">Monthly retainer</span>
+        <span class="price">$400 / month</span>
+      </div>
+      <div class="pricing-row" style="border:none">
+        <span class="label">Custom firm solution</span>
+        <span class="price">Let's talk</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ────────────────────────────────────────────────────────────── -->
+<footer>
+  <div>© 2026 AnkurAI.tech — Custom AI Document Intelligence</div>
+  <div>Built by <strong style="color:var(--cream)">Ankur Srivastava</strong> · <a href="mailto:ankur@ankurai.tech">ankur@ankurai.tech</a></div>
+  <div>Not a law firm · Always attorney-reviewed</div>
+</footer>
+
+<script>
+// Scroll fade-in
+const obs = new IntersectionObserver(
+  entries => entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible') }),
+  { threshold: 0.1 }
+);
+document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+
+// Animated typing in demo fields
+const vals = [
+  ['SRIVASTAVA, ANKUR K.', 'India · Padrauna UP', 'H-1B · Oct 2025', 'EB-2 NIW · 2019'],
+  ['NGUYEN, MINH VAN',     'Vietnam · Hanoi',     'F-1 OPT expired', 'Family-based'],
+  ['PATEL, PRIYA S.',      'India · Mumbai',       'H-4 · Oct 2025',  'EB-2 Dependent'],
+];
+let current = 0;
+const fieldVals = document.querySelectorAll('.field-val.ok');
+
+function rotateCase() {
+  const c = vals[current % vals.length];
+  if(fieldVals.length >= 4) {
+    fieldVals[0].textContent = '✓ ' + c[0];
+    fieldVals[1].textContent = '✓ ' + c[1];
+    fieldVals[2].textContent = '✓ ' + c[2];
+    fieldVals[3].textContent = '✓ ' + c[3];
+  }
+  current++;
+}
+setInterval(rotateCase, 3500);
+</script>
+</body>
+</html>
+HTMLEOF
+echo "Size: $(wc -c < /home/claude/ankurai_landing.html) bytes"
