@@ -1,0 +1,192 @@
+# AnkurAI - Ankur Srivastava
+
+> Independent AI Engineer (IIT Roorkee) building HireIQ AI Interview Agent, Document Intelligence, RAG systems & Agentic AI workflows. Production systems for state governments and US B2B. Corporate Trainer: FDE, Agentic AI, GenAI, Python, Business Development, Email Automation.
+
+## Who is Ankur Srivastava?
+
+Ankur Srivastava, also known as AnkurAI, is an independent AI Engineer based in Ghaziabad, India, alumnus of IIT Roorkee. He builds production AI systems: HireIQ AI Interview Agent (70% faster hiring), Document Intelligence (17+ doc types, 95%+ accuracy), Multilingual RAG over government schemes with WhatsApp bot for Panchayati Raj Dept and Odisha State Dept, and Agentic workflows for US freight brokerage and trades business.
+
+## Products
+
+- **HireIQ AI Interview Agent**: Conducts 15-min structured voice+video interviews in Hindi + English, custom rubrics, cheat detection, ATS integration. Reduces screening time by 70%, enables 24/7 interviewing. White-label available. Book demo at https://ankurai.tech/#contact
+- **Document Intelligence**: Azure Document Intelligence + Surya OCR pipeline parsing 17+ govt doc types into structured verified data with 95%+ accuracy. Reduces review from 3 days to 30 minutes.
+- **RAG & Conversational AI**: Multilingual RAG, Text-to-SQL, hybrid MMR retrieval, WhatsApp + web + voice assistants grounded in docs.
+
+## Corporate Training
+
+Trainer Ankur Srivastava provides corporate training in India: FDE Training, Agentic AI Training (LangGraph), Generative AI Training, Python Training Ghaziabad, Business Development with AI, Email Automation with Gmail API + AI. Available Online, Offline Delhi NCR, Hybrid.
+
+## Contact
+
+- Email: ankur@ankurai.tech
+- WhatsApp: +91 88512 33153
+- LinkedIn: https://www.linkedin.com/in/ankuraisolution/
+- Website: https://ankurai.tech
+- Location: Ghaziabad, Uttar Pradesh, India
+
+## Keywords
+
+Ankur Srivastava, AnkurAI, HireIQ, AI Interview Agent India, Agentic AI Trainer India, GenAI Trainer Ghaziabad, FDE Trainer, Python Trainer Ghaziabad, Document Intelligence India, RAG System India, AI Engineer India, IIT Roorkee AI Engineer
+\n\n<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ankur Srivastava - AI Engineer | HireIQ AI Interview Agent | Generative & Agentic AI Consulting India</title>
+<meta name="description" content="Ankur Srivastava (IIT Roorkee) - Independent AI Engineer building HireIQ AI Interview Agent, Document Intelligence, RAG systems & Agentic AI workflows. 70% faster hiring, 17+ doc types, 95%+ accuracy. Production systems for state govts & US B2B. Training: FDE, Python, GenAI.">
+<link rel="canonical" href="https://ankurai.tech/">
+<meta name="keywords" content="Ankur Srivastava, AnkurAI, AI Engineer India, HireIQ, AI Interview Agent India, Agentic AI Trainer India, GenAI Trainer Ghaziabad, FDE Trainer, Python Trainer, Document Intelligence, RAG System, Azure OpenAI, LangGraph, IIT Roorkee AI Engineer, AI Consultant Delhi NCR">
+<meta name="author" content="Ankur Srivastava">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="google-site-verification" content="google2d890c086ba9cf03">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+
+<!-- Open Graph for Google + ChatGPT scraping -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ankurai.tech/">
+<meta property="og:title" content="AnkurAI — HireIQ AI Interview Agent | AI Engineer IIT Roorkee | GenAI & Agentic AI Training">
+<meta property="og:description" content="I built HireIQ — AI that interviews at scale. And AI that reads what bureaucracy writes. 70% faster hiring, 17+ doc types parsed. Production systems for govt & B2B. Corporate Training: FDE, Python, GenAI, Email Automation.">
+<meta property="og:image" content="https://ankurai.tech/og-image.jpg">
+<meta property="og:site_name" content="AnkurAI">
+<meta property="og:locale" content="en_IN">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://ankurai.tech/">
+<meta name="twitter:title" content="Ankur Srivastava — HireIQ AI Interview Agent | AI Engineer">
+<meta name="twitter:description" content="IIT Roorkee AI Engineer. HireIQ interview automation, document intelligence, RAG & agentic systems. Trainer for FDE, GenAI, Python.">
+<meta name="twitter:image" content="https://ankurai.tech/og-image.jpg">
+<meta name="twitter:creator" content="@ankuraisolution">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+
+<!-- JSON-LD for Google + ChatGPT Knowledge Graph -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ankur Srivastava",
+  "alternateName": "AnkurAI",
+  "url": "https://ankurai.tech",
+  "image": "https://ankurai.tech/og-image.jpg",
+  "jobTitle": "AI Engineer & Corporate Trainer",
+  "description": "Independent AI Engineer (IIT Roorkee) building HireIQ AI Interview Agent, Document Intelligence, RAG and Agentic AI systems. Corporate trainer for FDE, Agentic AI, GenAI, Python, Business Development, Email Automation.",
+  "email": "mailto:ankur@ankurai.tech",
+  "telephone": "+91-8851233153",
+  "address": {"@type": "PostalAddress", "addressLocality": "Ghaziabad", "addressRegion": "Uttar Pradesh", "addressCountry": "IN"},
+  "alumniOf": {"@type": "CollegeOrUniversity", "name": "IIT Roorkee"},
+  "sameAs": ["https://www.linkedin.com/in/ankuraisolution/", "https://github.com/coder-lang", "https://ankurai.tech"],
+  "knowsAbout": ["HireIQ","AI Interview Agent","Generative AI","Agentic AI","RAG","LLM","Document Intelligence","Azure OpenAI","LangChain","LangGraph","Python Training","FDE Training","Email Automation"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "AnkurAI",
+  "url": "https://ankurai.tech",
+  "logo": "https://ankurai.tech/logo.png",
+  "founder": {"@type": "Person", "name": "Ankur Srivastava"},
+  "contactPoint": {"@type": "ContactPoint","email":"ankur@ankurai.tech","telephone":"+91-8851233153","contactType":"sales", "areaServed":"IN,US", "availableLanguage":["en","hi"]},
+  "sameAs": ["https://www.linkedin.com/in/ankuraisolution/"],
+  "description": "AnkurAI builds HireIQ AI Interview Agent, Document Intelligence and Agentic AI workflows for govt and B2B."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "AnkurAI - HireIQ & AI Consulting",
+  "image": "https://ankurai.tech/og-image.jpg",
+  "@id": "https://ankurai.tech",
+  "url": "https://ankurai.tech",
+  "priceRange": "$$",
+  "address": {"@type": "PostalAddress", "addressLocality": "Ghaziabad", "addressCountry": "IN"},
+  "geo": {"@type": "GeoCoordinates", "latitude": 28.6692, "longitude": 77.4538},
+  "openingHoursSpecification": {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:00", "closes": "19:00"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "What is HireIQ AI Interview Agent?", "acceptedAnswer": {"@type": "Answer", "text": "HireIQ is an AI interview agent built by Ankur Srivastava that conducts 15-min structured voice+video interviews in Hindi and English, scores candidates on custom rubrics, detects cheating, and pushes reports to ATS. It reduces screening time by 70% and allows 24/7 interviewing."}},
+    {"@type": "Question", "name": "Who is Ankur Srivastava AnkurAI?", "acceptedAnswer": {"@type": "Answer", "text": "Ankur Srivastava (IIT Roorkee) is an independent AI Engineer based in Ghaziabad, India. He builds Document Intelligence (17+ doc types, 95%+ accuracy), RAG systems for state governments, and Agentic AI workflows for US B2B. He is also a corporate trainer for FDE, Agentic AI, GenAI, Python, Business Development and Email Automation."}},
+    {"@type": "Question", "name": "What corporate training does AnkurAI provide?", "acceptedAnswer": {"@type": "Answer", "text": "AnkurAI provides corporate training in 6 tracks: FDE Training, Agentic AI Training with LangGraph, Generative AI Training, Python Training, Business Development with AI, and Email Automation with Gmail API. Available online, offline in Delhi NCR, and hybrid for colleges and corporate teams."}},
+    {"@type": "Question", "name": "How does Document Intelligence work?", "acceptedAnswer": {"@type": "Answer", "text": "Document Intelligence pipeline uses Azure Document Intelligence, Surya OCR and custom models to parse 17+ types of government documents, scanned PDFs and handwritten forms into structured verified data with 95%+ accuracy, reducing review time from 3 days to 30 minutes."}},
+    {"@type": "Question", "name": "How to contact AnkurAI for HireIQ demo?", "acceptedAnswer": {"@type": "Answer", "text": "Contact via email ankur@ankurai.tech, WhatsApp +91 88512 33153, or LinkedIn ankuraisolution. Fill the contact form at ankurai.tech/#contact and you get auto-email reply within 24 hours."}}
+  ]
+}
+</script>
+
+<style>
+:root{--bg:#fcfcf9;--ink:#0f172a;--muted:#64748b;--line:#e2e8f0;--line2:#f1f5f9;--radius:16px;--shadow:0 4px 24px rgba(15,23,42,.06);--shadow2:0 12px 40px rgba(15,23,42,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+a{color:inherit;text-decoration:none}.container{max-width:1160px;margin:0 auto;padding:0 20px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:12px;font-weight:600;font-size:14px;border:1px solid var(--line);cursor:pointer;transition:.2s}
+.btn-primary{background:var(--ink);color:#fff;border-color:var(--ink)}.btn-primary:hover{transform:translateY(-1px);box-shadow:var(--shadow2)}.btn-secondary{background:#fff}
+.badge{display:inline-flex;padding:6px 12px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:12px;font-weight:600;text-transform:uppercase;color:var(--muted)}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);transition:.2s}.card:hover{box-shadow:var(--shadow2)}
+.muted{color:var(--muted)}header{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);background:rgba(252,252,249,.85);border-bottom:1px solid var(--line)}
+header .nav{display:flex;justify-content:space-between;align-items:center;height:64px}
+header .links{display:flex;gap:22px;font-size:14px;font-weight:500;color:var(--muted)}header .links a:hover{color:var(--ink)}
+.hero{padding:72px 0 40px;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.hero h1{font-size:52px;line-height:.95;letter-spacing:-.04em;margin:16px 0;font-weight:800}
+.stats{display:flex;gap:24px;margin-top:28px;flex-wrap:wrap}.stat{border-left:1px solid var(--line);padding-left:16px}.stat b{font-size:22px;display:block}
+.mock{background:#0f172a;color:#e2e8f0;border-radius:20px;padding:20px;font-family:ui-monospace,Menlo,monospace;font-size:13px;box-shadow:var(--shadow2)}
+section{padding:80px 0}section h2{font-size:32px;letter-spacing:-.03em;margin:0 0 12px;font-weight:800}section .sub{color:var(--muted);max-width:640px;margin-bottom:32px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.tag{display:inline-flex;padding:4px 10px;border-radius:999px;background:var(--line2);border:1px solid var(--line);font-size:11px;font-weight:600}
+.clients{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.client{padding:20px}
+.logo{width:36px;height:36px;border-radius:8px;background:var(--line2);display:grid;place-items:center;font-weight:800;font-size:12px}
+.form{display:grid;gap:12px}.form input,.form select,.form textarea{padding:12px 14px;border-radius:10px;border:1px solid var(--line);font-size:14px;width:100%;font-family:inherit}
+.form textarea{min-height:100px;resize:vertical}
+.success{background:#dcfce7;border:1px solid #86efac;color:#166534;padding:12px;border-radius:10px;font-size:13px;display:none}
+.error{background:#fee2e2;border:1px solid #fca5a5;color:#991b1b;padding:12px;border-radius:10px;font-size:13px;display:none}
+.expertise-num{font-size:12px;font-weight:800;color:var(--muted);border:1px solid var(--line);width:28px;height:28px;border-radius:50%;display:grid;place-items:center}
+.faq-item{padding:18px;border:1px solid var(--line);border-radius:12px;background:#fff;margin-bottom:12px}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.grid3,.grid2,.clients{grid-template-columns:1fr}header .links{display:none}.hero h1{font-size:36px}}
+</style>
+</head>
+<body>
+<header><div class="container nav"><div style="font-weight:800;font-size:18px">AnkurAI</div><div class="links"><a href="#expertise">Expertise</a><a href="#hireiq">HireIQ</a><a href="#services">Services</a><a href="#training">Training</a><a href="#demo">Demo</a><a href="#clients">Clients</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div><a class="btn btn-primary" style="padding:8px 14px" href="#contact">Get in touch</a></div></header>
+<main class="container">
+<div class="hero">
+<div>
+<span class="badge">Available for HireIQ deployments & AI training — IIT Roorkee</span>
+<h1>I built HireIQ — AI that interviews at scale. And AI that reads what bureaucracy writes.</h1>
+<p class="lead muted">I'm <b>Ankur Srivastava</b>, independent <b>AI Engineer (IIT Roorkee)</b> based in Ghaziabad. Document intelligence, RAG systems, and agentic workflows shipped to production for <b>state governments and B2B teams in India & US</b>. Now focused on <b>HireIQ AI Interview Agent</b> and corporate training in FDE, Agentic AI, GenAI, Python, Business Development, Email Automation.</p>
+<div style="display:flex;gap:12px;margin-top:20px;flex-wrap:wrap"><a class="btn btn-primary" href="#hireiq">Explore HireIQ — 70% faster hiring</a><a class="btn btn-secondary" href="#training">View Training</a><a class="btn btn-secondary" href="https://www.linkedin.com/in/ankuraisolution/" target="_blank">LinkedIn — ankuraisolution</a></div>
+<div class="stats"><div class="stat"><b>70%</b><span class="muted">Faster hiring</span></div><div class="stat"><b>17+</b><span class="muted">Doc types parsed</span></div><div class="stat"><b>95%+</b><span class="muted">Extraction accuracy</span></div><div class="stat"><b>3d → 30m</b><span class="muted">Review time</span></div></div>
+</div>
+<div class="mock"><div style="display:flex;gap:8px;margin-bottom:14px"><span style="width:10px;height:10px;background:#ef4444;border-radius:50%"></span><span style="width:10px;height:10px;background:#f59e0b;border-radius:50%"></span><span style="width:10px;height:10px;background:#22c55e;border-radius:50%"></span><span style="margin-left:auto;color:#475569">hireiq.live — prod</span></div>
+<div>> hireiq.start_interview(candidate="Rahul", role="Backend Engineer")</div><br>
+<div style="color:#93c5fd">AI: Hi Rahul, tell me about a challenging backend scaling issue you solved?</div><br>
+<div style="color:#64748b">[candidate audio → transcript → scoring]</div><br>
+<div style="border-top:1px solid #1e293b;padding-top:12px">SCORE CARD<br><br>Technical: 8.5/10 | Communication: 9/10 | Problem Solving: 8/10<br><br>✓ Recommendation: Strong hire → pushed to ATS<br><br><span style="color:#64748b">// Document Intelligence also live</span><br>extraction.parse(doc="environmental_clearance.pdf") → 95.2% confidence</div>
+</div>
+</div>
+
+<section style="padding-top:20px"><div class="card" style="padding:20px;display:flex;gap:16px;align-items:center"><div style="font-weight:700">Based in Ghaziabad, building for govt & B2B</div><p class="muted" style="font-size:13px;margin:0">I don't build demos. Every project listed is running somewhere — in a state department office, a freight brokerage, or a trades business. IIT Roorkee background, focused on Azure OpenAI, FastAPI, LangChain / LangGraph, ChromaDB. Also a corporate trainer for FDE, Python, GenAI, Email Automation.</p></div>
+<div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap"><span class="tag">FastAPI</span><span class="tag">Azure OpenAI</span><span class="tag">LangChain</span><span class="tag">LangGraph</span><span class="tag">ChromaDB</span><span class="tag">WhatsApp API</span><span class="tag">Document Intelligence</span><span class="tag">Surya OCR</span><span class="tag">HireIQ</span><span class="tag">RAG</span></div>
+</section>
+
+<section id="expertise"><h2>Expertise: HireIQ, RAG & Document Intelligence</h2><p class="sub">Three tracks, one skill: turning messy real-world workflows into systems that run without a human re-reading everything. AI Engineer in India focused on production deployment.</p>
+<div class="grid3">
+<div class="card" style="padding:24px"><div class="expertise-num">01</div><h3 style="margin:12px 0 8px">HireIQ & Agentic AI India</h3><p class="muted" style="font-size:14px">AI Interview Agents and multi-agent workflows that run intake → verification → scoring → routing end-to-end. Built for Indian hiring at scale.</p><ul style="font-size:13px;color:var(--muted)"><li>24/7 interviews in Hindi + English</li><li>Bias-reduced rubric scoring</li><li>ATS & WhatsApp integration</li></ul></div>
+<div class="card" style="padding:24px"><div class="expertise-num">02</div><h3 style="margin:12px 0 8px">RAG & Conversational AI</h3><p class="muted" style="font-size:14px">Assistants that answer from your documents, in your user's language, on web, WhatsApp, or voice — grounded so they don't hallucinate. State govt deployments.</p><ul style="font-size:13px;color:var(--muted)"><li>Hybrid MMR retrieval</li><li>Text-to-SQL over scheme data</li><li>Live streaming answers</li></ul></div>
+<div class="card" style="padding:24px"><div class="expertise-num">03</div><h3 style="margin:12px 0 8px">Document Intelligence</h3><p class="muted" style="font-size:14px">Extraction pipelines that turn scanned PDFs, handwritten forms, and inconsistent govt paperwork into structured verified data — 17+ types, 95%+ accuracy.</p><ul style="font-size:13px;color:var(--muted)"><li>17+ doc types</li><li>95%+ human-trust accuracy</li><li>Azure Document Intelligence + Surya OCR</li></ul></div>
+</div>
+</section>
+
+<section id="hireiq" class="card" style="padding:32px"><span class="badge">Flagship Product — HireIQ AI Interview Agent India</span><h2 style="margin-top:12px">Manual screening is slow, expensive, inconsistent. HireIQ runs structured AI interviews on autopilot.</h2><div class="grid2" style="margin-top:20px"><div><b>The Problem</b><p class="muted">Recruiters spend 23+ hrs/week screening. Candidates drop off. Bias and inconsistency. No Hindi support.</p></div><div><b>The Solution by Ankur Srivastava</b><p class="muted">HireIQ AI conducts human-like interviews via link/phone in Hindi + English, scores on your custom rubrics, auto-rejects or moves forward to ATS.</p></div></div><div style="margin-top:16px" class="grid3"><span class="tag">✓ Voice + Video interviews</span><span class="tag">✓ Hindi + English</span><span class="tag">✓ Custom rubrics</span><span class="tag">✓ Cheat detection</span><span class="tag">✓ ATS integration</span><span class="tag">✓ Instant reports</span></div><h4 style="margin-top:24px">How HireIQ Works — Built by IIT Roorkee AI Engineer</h4><ol style="font-size:14px;color:var(--muted)"><li>Candidate gets interview link via WhatsApp/Email from HireIQ</li><li>AI conducts 15-min structured interview — HireIQ asks role-specific questions</li><li>Transcript + audio + video captured by HireIQ</li><li>LLM scores candidate against your rubric (Technical, Communication, Problem Solving)</li><li>Report pushed to your ATS / Google Sheet / Email automatically</li><li>You interview only top 20% — 70% faster hiring</li></ol><p style="margin-top:16px"><b>Result:</b> 70% reduction in screening time, 3x more candidates screened, consistent scoring. Deployed for B2B teams in India & US.</p><div style="margin-top:20px"><a class="btn btn-primary" href="#contact">Book HireIQ Demo</a></div></section>
+
+<section id="services"><h2>AI Services: GenAI Consulting & Implementation</h2><p class="sub">GenAI consulting and implementation — from idea to production deployment. AI Engineer and Consultant in Delhi NCR, Ghaziabad.</p>
+<div class="grid3">
+<div class="card" style="padding:20px"><h3>🤖 HireIQ Implementation India</h3><p class="muted" style="font-size:13px">Deploy AI interview agent for your hiring funnel. Custom rubrics, Hindi+English, ATS integration, white-label. For startups & enterprises in India & US.</p></div>
+<div class="card" style="padding:20px"><h3>⚙️ Agentic Workflow Automation</h3><p class="muted" style="font-size:13px">Multi-agent systems for intake, verification, routing, follow-up — not just a chatbot. Built with LangGraph, CrewAI patterns.</p></div>
+<div class="card" style="padding:20px"><h3>📄 Document Intelligence India</h3><p class="muted" style="font-size:13px">Extraction from scanned PDFs, handwritten forms, govt docs to structured verified data. 17+ types, 95%+ accuracy, Azure Document Intelligence.</p></div>
+<div class="card" style="padding:20px"><h3>💬 RAG & Assistants</h3><p class="muted" style="font-size:13px">Chatbots grounded in your docs, multilingual, on web/WhatsApp/voice. Multilingual RAG over schemes + WhatsApp bot for Panchayati Raj Dept.</p></div>
+<div class="card" style="padding:20px"><h3>🚀 GenAI Consulting</h3><p class="muted" style="font-size:13px">Architecture, stack selection, build vs buy, production readiness audit. Azure OpenAI, FastAPI, LangChain expert.</p></div>
+<div class="card" style="padding:20px"><h3>🎓 AI Training & Workshops India</h3><p class="muted" style="font-size:13px">Corporate cohorts on GenAI, RAG, LangGraph, Python, Email Automation for engineering & business teams

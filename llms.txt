@@ -1,0 +1,30 @@
+# AnkurAI - Ankur Srivastava
+
+> Independent AI Engineer (IIT Roorkee) building HireIQ AI Interview Agent, Document Intelligence, RAG systems & Agentic AI workflows. Production systems for state governments and US B2B. Corporate Trainer: FDE, Agentic AI, GenAI, Python, Business Development, Email Automation.
+
+## Who is Ankur Srivastava?
+
+Ankur Srivastava, also known as AnkurAI, is an independent AI Engineer based in Ghaziabad, India, alumnus of IIT Roorkee. He builds production AI systems: HireIQ AI Interview Agent (70% faster hiring), Document Intelligence (17+ doc types, 95%+ accuracy), Multilingual RAG over government schemes with WhatsApp bot for Panchayati Raj Dept and Odisha State Dept, and Agentic workflows for US freight brokerage and trades business.
+
+## Products
+
+- **HireIQ AI Interview Agent**: Conducts 15-min structured voice+video interviews in Hindi + English, custom rubrics, cheat detection, ATS integration. Reduces screening time by 70%, enables 24/7 interviewing. White-label available. Book demo at https://ankurai.tech/#contact
+- **Document Intelligence**: Azure Document Intelligence + Surya OCR pipeline parsing 17+ govt doc types into structured verified data with 95%+ accuracy. Reduces review from 3 days to 30 minutes.
+- **RAG & Conversational AI**: Multilingual RAG, Text-to-SQL, hybrid MMR retrieval, WhatsApp + web + voice assistants grounded in docs.
+
+## Corporate Training
+
+Trainer Ankur Srivastava provides corporate training in India: FDE Training, Agentic AI Training (LangGraph), Generative AI Training, Python Training Ghaziabad, Business Development with AI, Email Automation with Gmail API + AI. Available Online, Offline Delhi NCR, Hybrid.
+
+## Contact
+
+- Email: ankur@ankurai.tech
+- WhatsApp: +91 88512 33153
+- LinkedIn: https://www.linkedin.com/in/ankuraisolution/
+- Website: https://ankurai.tech
+- Location: Ghaziabad, Uttar Pradesh, India
+
+## Keywords
+
+Ankur Srivastava, AnkurAI, HireIQ, AI Interview Agent India, Agentic AI Trainer India, GenAI Trainer Ghaziabad, FDE Trainer, Python Trainer Ghaziabad, Document Intelligence India, RAG System India, AI Engineer India, IIT Roorkee AI Engineer
+\n\n## Blog for SEO\n- HireIQ AI Interview Agent India: https://ankurai.tech/blog/hireiq-ai-interview-agent-india.html\n- Agentic AI Training Delhi NCR: https://ankurai.tech/blog/agentic-ai-training-delhi-ncr.html\n
