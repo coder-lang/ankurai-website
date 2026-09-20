@@ -1,20 +1,15 @@
 User-agent: *
 Allow: /
 Sitemap: https://ankurai.tech/sitemap.xml
-
 # LLM Crawlers
 User-agent: GPTBot
 Allow: /
-
 User-agent: ChatGPT-User
 Allow: /
-
 User-agent: CCBot
 Allow: /
-
 User-agent: anthropic-ai
 Allow: /
-
 User-agent: Claude-Web
 Allow: /
 
